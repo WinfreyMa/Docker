@@ -8,5 +8,7 @@ docker network ls
   
   
   docker run -d --name switch1 --network switch-network custome_switch_image
+  docker start -a my_container
+
   docker ps -a
   
