@@ -15,4 +15,4 @@ RUN apt-get update && apt-get install -y \
 EXPOSE 22
 
 
-CMD ["bash", "-c", "service ssh start && slepp infinity" ]
+CMD ["bash", "-c", "service ssh start && sleep infinity" ]
