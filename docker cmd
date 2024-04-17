@@ -8,7 +8,8 @@ docker network ls
   
   
   docker run -d --name switch1 --network switch-network custome_switch_image
-  docker start -a my_container
-
+  docker start -a my_container #这个命令将在容器启动时附加到容器的终端，使你能够查看容器的输出并与其交互
   docker ps -a
-  
+
+docker inspect my_container
+
