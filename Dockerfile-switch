@@ -5,6 +5,7 @@ LABEL maintainer="wi-fi-hi@163.com"
 RUN apt-get update && apt-get install -y \
     iproute2 \
     net-tools \
+    openssh-server \
     && rm -rf /var/lib/apt/lists/*
 
 #RUN ip link add veth0 type veth peer name veth1
