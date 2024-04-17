@@ -1,0 +1,12 @@
+docker network create switch-network
+docker network ls
+  
+  #create Dockerfile for image
+  docker build -t custome_switch_image .  / $(pwd)
+  docker image ls
+
+  
+  
+  docker run -d --name switch1 --network switch-network custome_switch_image
+  docker ps -a
+  
